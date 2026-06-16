@@ -35,6 +35,6 @@ test.describe('Fitur Signup', () => {
     await page.locator('#zipcode').fill('22001');
     await page.getByRole('textbox', { name: 'Mobile Number *' }).fill('085232443044');
     await page.getByRole('button', { name: 'Create Account' }).click();
-    await expect(page).toHaveURL('https://automationexercise.com/account_created');
+    await expect(page).toHaveURL('https://automationexercise.com/account_created'); 
   });
 });
